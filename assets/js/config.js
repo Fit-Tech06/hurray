@@ -25,32 +25,32 @@ window.BIRTHDAY_CONFIG = {
    */
   memories: [
     {
-      frontImage: "assets/images/fitness.jpeg",
+      frontImage: "assets/Images/fitness.jpeg",
       frontText: "The grind",
       back: "Never quit exercising and eating healthy. I know it's hard, but if you have made the decision already, stick to it. You've already come so far, keep going. I'm sure it will pay off one day. gothayth?? Next card click mad",
     },
     {
-      frontImage: "assets/images/work.jpeg",
+      frontImage: "assets/Images/work.jpeg",
       frontText: "Dreams abroad",
       back: "Here comes the another part, financial goals and dreams abroad. I just wanna say you that you already have a great mindset, just never quit and keep going. Your thoughts, dreams and actions will make you standout one day from everyone else around you. Canada was your goal right? Never forget. Good luck!",
     },
     {
-      frontImage: "assets/images/smile.jpeg",
+      frontImage: "assets/Images/smile.jpeg",
       frontText: "The smile/peace",
       back: "You know what? This is the most important part. The smile you carry, the more peaceful you become, the more good people you surround yourself with. Never let an outsider or a situation disturb your mental peace. Just to be so real, cut off everything and everyone who bring trauma and disturb your peace, literally! no matter who it is. Put yourself first always. It's not selfishness, it's self-care.",
     },
     {
-      frontImage: "assets/images/Celebration.jpeg",
+      frontImage: "assets/Images/Celebration.jpeg",
       frontText: "This year",
       back: "This is your new year today, considering this as a new beginning, give your 100% in everything you do. Check how potential you have in you. Good part? it's never late to start, go and do whatever you want. I will always be so eager to see you succeed and step up in your life. Let me tell you a secret... You are already 'SUCCESSFULL'. You just have some to-do's to complete, and I know you'll do it. :)",
     },
   ],
 
   photos: [
-    { src: "assets/images/we2.jpeg", alt: "Us — we2" },
-    { src: "assets/images/we2one.jpeg", alt: "Us — we2one" },
-    { src: "assets/images/we4.jpeg", alt: "Us — we4" },
-    { src: "assets/images/we4one.jpeg", alt: "Us — we4one" },
+    { src: "assets/Images/we2.jpeg", alt: "Us — we2" },
+    { src: "assets/Images/we2one.jpeg", alt: "Us — we2one" },
+    { src: "assets/Images/we4.jpeg", alt: "Us — we4" },
+    { src: "assets/Images/we4one.jpeg", alt: "Us — we4one" },
   ],
 
   /**
