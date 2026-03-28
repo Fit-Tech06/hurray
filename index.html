@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Happy Birthday — Souju akka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="stars" class="stars-canvas" aria-hidden="true"></canvas>
+
+  <header class="hero" id="top">
+    <p class="hero-kicker" id="heroKicker" data-reveal>March 28</p>
+    <h1 class="hero-title" data-reveal>
+      <span class="hero-line">The world got a little</span>
+      <span class="hero-line hero-line--accent">brighter</span>
+    </h1>
+    <p class="hero-name" id="heroName" data-reveal>Happy Birthday, Sis</p>
+    <p class="hero-sub" data-reveal>Scroll slowly. This page is just for you.</p>
+    <button type="button" class="btn btn--glow" id="confettiBtn" data-reveal>
+      <span class="btn__spark" aria-hidden="true"></span>
+      Tap for celebration
+    </button>
+  </header>
+
+  <main>
+    <section class="section letter-section" aria-labelledby="letter-heading">
+      <div class="section-inner">
+        <h2 id="letter-heading" class="section-title" data-reveal>A letter</h2>
+        <div class="envelope" id="envelope" data-reveal tabindex="0" role="button" aria-expanded="false" aria-label="Open the birthday letter">
+          <div class="envelope__paper" id="letterPaper">
+            <p class="letter__greeting" id="letterGreeting">Dear sister,</p>
+            <p class="letter__body" id="letterBody">
+              Some bonds don’t need explaining — they’re just there, steady and warm, year after year.
+              On your birthday, I hope you feel how rare you are: the laughter you bring, the strength you carry,
+              and the softness you give the people lucky enough to know you.
+            </p>
+            <p class="letter__signoff" id="letterSignoff">With love — always.</p>
+          </div>
+          <div class="envelope__flap" aria-hidden="true"></div>
+          <p class="envelope__hint">Click to open</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories-section" aria-labelledby="memories-heading">
+      <div class="section-inner">
+        <h2 id="memories-heading" class="section-title" data-reveal>Little lights</h2>
+        <p class="section-lead" data-reveal>Tap a card. Each one holds a thought meant for you.</p>
+        <div class="card-grid" id="memoryCards" data-reveal></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" aria-labelledby="gallery-heading">
+      <div class="section-inner">
+        <h2 id="gallery-heading" class="section-title" data-reveal>Our frames</h2>
+        <p class="section-lead" data-reveal>Four moments — same pictures you know and love.</p>
+        <div class="gallery" id="photoGallery"></div>
+      </div>
+    </section>
+
+    <section class="section secret-section" aria-labelledby="secret-heading">
+      <div class="section-inner">
+        <h2 id="secret-heading" class="section-title" data-reveal>One more thing</h2>
+        <p class="section-lead" data-reveal>
+          Type the secret number — then press Enter. (Secreat number might be your birth year 👀)
+        </p>
+        <form class="secret-form" id="secretForm" data-reveal autocomplete="off">
+          <label class="sr-only" for="secretInput">Secret number</label>
+          <input
+            type="text"
+            inputmode="numeric"
+            id="secretInput"
+            class="secret-input"
+            placeholder="Secret number…"
+            autocomplete="off"
+          />
+          <button type="submit" class="btn btn--ghost">Unlock</button>
+        </form>
+        <p class="secret-message" id="secretMessage" hidden></p>
+      </div>
+    </section>
+
+    <section class="section wish-section" aria-labelledby="wish-heading">
+      <div class="section-inner wish-inner">
+        <h2 id="wish-heading" class="section-title" data-reveal>Make a wish</h2>
+        <p class="section-lead" data-reveal>Blow on the candle (or tap it). Silly? Yes. That’s the point.</p>
+        <div class="cake" id="cake" data-reveal>
+          <div class="candle" id="candle" role="button" tabindex="0" aria-label="Blow out the candle">
+            <span class="candle__flame" id="flame"></span>
+          </div>
+          <div class="cake__frosting"></div>
+          <div class="cake__body"></div>
+        </div>
+        <p class="wish-status" id="wishStatus" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p id="footerLine">Made with love for you today.</p>
+    <a href="#top" class="footer-top">Back to top ↑</a>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
